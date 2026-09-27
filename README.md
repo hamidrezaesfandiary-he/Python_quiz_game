@@ -3,15 +3,15 @@ A simple quiz game built with python
 
 ## Table Of Contents
 - [Python Quiz Game](#python-quiz-game)
-  - [Table Of Contents](#table-of-contents)
   - [Features](#features)
   - [Project Structure](#project-structure)
-    - [File Description](#file-description)
+  - [File Description](#file-description)
   - [Requirments](#requirments)
   - [Installation](#installation)
   - [Envoriment Setup](#envoriment-setup)
   - [Usage](#usage)
   - [Example Output](#example-output)
+  - [Screen Shot](#screen-shot)
   - [Road Map](#road-map)
   - [Contributing](#contributing)
   - [Licence](#licence)
@@ -107,6 +107,17 @@ wrong
 your score is:  1 out of  3
 keep praticing Alex   
 ```
+
+## Screen Shot
+
+### start game
+![start game](pictures\1.png)
+
+### quiz
+![quiz](pictures\2.png)
+### finalscore
+![final score](pictures\3.png)
+
 ## Road Map
 - [x] add multiple quiz questions
 - [x] calculate the final score
