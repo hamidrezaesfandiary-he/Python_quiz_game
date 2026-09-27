@@ -1,4 +1,6 @@
 # Python Quiz Game
+![Static Badge](https://img.shields.io/badge/python-3.13-blue)
+
 A simple quiz game built with python
 
 ## Table Of Contents
@@ -12,6 +14,7 @@ A simple quiz game built with python
   - [Usage](#usage)
   - [Example Output](#example-output)
   - [Screen Shot](#screen-shot)
+  - [Demo](#demo)
   - [Road Map](#road-map)
   - [Contributing](#contributing)
   - [Licence](#licence)
@@ -35,21 +38,42 @@ A simple quiz game built with python
 
 ```text
 python_quiz_game/
-│   main.py
-│   question.py
-│   requirments.txt
 │   .env.example
 │   .gitignore
+│   image.png
+│   main.py
+│   question.py
 │   README.md
+│   requirments.txt
+│
+│
+├───gifs
+│       quiz_demo.gif
+│
+├───pictures
+│       1.png
+│       2.png
+│       3.png
+└───
 ```
 
 ### File Description
-- `main.py ` - main file used to run quiz game
-- `question.py` - stores questions and answers
-- `requirments.txt` - lists the python packages needed for the project
-- `.env.example` - shows the envoriment variables needed by the project
-- `gitignore` - tells git wich files and folders should not be tracked
-- `README.md` - contains the project documantion
+| File | Description |
+|---- | ---- |
+| `main.py ` | main file used to run quiz game |
+| `question.py` | stores questions and answers|
+| `requirments.txt` | lists the python packages needed for the project
+| `.env.example` | shows the envoriment variables needed by the project
+| `gitignore` | tells git wich files and folders should not be tracked
+| `README.md` | contains the project documantion
+| `pictures/` | stores project screen shots
+| `pictures/1.png` | screen shots of the game start
+| `pictures/2.png` | screen shots of the Quiz section
+| `pictures/3.png` | screen shots of the final result
+| `gifs/` | stores demo gif files
+| `gifs/quiz_demo.gif` | show's the project demo
+
+
 
 ## Requirments
 Before running the project make sure you have :
@@ -117,6 +141,9 @@ keep praticing Alex
 ![quiz](pictures\2.png)
 ### finalscore
 ![final score](pictures\3.png)
+
+## Demo
+![quiz_demo](gifs\quiz_demo.gif)
 
 ## Road Map
 - [x] add multiple quiz questions
