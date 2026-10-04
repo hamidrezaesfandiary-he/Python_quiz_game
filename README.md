@@ -1,162 +1,213 @@
 # Python Quiz Game
-![Static Badge](https://img.shields.io/badge/python-3.13-blue)
 
-A simple quiz game built with python
+![Python](https://img.shields.io/badge/python-3.13-blue)
 
-## Table Of Contents
-- [Python Quiz Game](#python-quiz-game)
-  - [Features](#features)
-  - [Project Structure](#project-structure)
-  - [File Description](#file-description)
-  - [Requirments](#requirments)
-  - [Installation](#installation)
-  - [Envoriment Setup](#envoriment-setup)
-  - [Usage](#usage)
-  - [Example Output](#example-output)
-  - [Screen Shot](#screen-shot)
-  - [Demo](#demo)
-  - [Road Map](#road-map)
-  - [Contributing](#contributing)
-  - [Licence](#licence)
-  - [Author](#author)
+A simple quiz game built with Python.
+
+## Table of Contents
+
+* [Python Quiz Game](#python-quiz-game)
+
+  * [Features](#features)
+  * [Project Structure](#project-structure)
+  * [File Description](#file-description)
+  * [Requirements](#requirements)
+  * [Installation](#installation)
+  * [Environment Setup](#environment-setup)
+  * [Usage](#usage)
+  * [Example Output](#example-output)
+  * [Screenshots](#screenshots)
+  * [Demo](#demo)
+  * [Roadmap](#roadmap)
+  * [Contributing](#contributing)
+  * [License](#license)
+  * [Author](#author)
 
 ## Features
-- Quiz system
-  - Ask the player multiple questions 
-  - Check the answers automatically
-  - Calculates the final score
-- Result Storage
-  - saves quiz results in `result.txt`
-- Admin mode
-  - asks for the admin password
-  - checks if the password is correct
-  - keeps the password outside the main python file
-- Loads the password from `.env`
 
+### Quiz System
+
+* Asks the player multiple questions
+* Checks the answers automatically
+* Calculates the final score
+
+### Result Storage
+
+* Saves quiz results in `result.txt`
+
+### Admin Mode
+
+* Asks for the admin password
+* Checks if the password is correct
+* Keeps the password outside the main Python file
+* Loads the password from `.env`
 
 ## Project Structure
 
 ```text
 python_quiz_game/
+
 │   .env.example
 │   .gitignore
 │   image.png
 │   main.py
 │   question.py
 │   README.md
-│   requirments.txt
-│
+│   requirements.txt
 │
 ├───gifs
 │       quiz_demo.gif
 │
-├───pictures
-│       1.png
-│       2.png
-│       3.png
-└───
+└───pictures
+        1.png
+        2.png
+        3.png
 ```
 
-### File Description
-| File | Description |
-|---- | ---- |
-| `main.py ` | main file used to run quiz game |
-| `question.py` | stores questions and answers|
-| `requirments.txt` | lists the python packages needed for the project
-| `.env.example` | shows the envoriment variables needed by the project
-| `gitignore` | tells git wich files and folders should not be tracked
-| `README.md` | contains the project documantion
-| `pictures/` | stores project screen shots
-| `pictures/1.png` | screen shots of the game start
-| `pictures/2.png` | screen shots of the Quiz section
-| `pictures/3.png` | screen shots of the final result
-| `gifs/` | stores demo gif files
-| `gifs/quiz_demo.gif` | show's the project demo
+## File Description
 
+| File                 | Description                                             |
+| -------------------- | ------------------------------------------------------- |
+| `main.py`            | Main file used to run the quiz game                     |
+| `question.py`        | Stores questions and answers                            |
+| `requirements.txt`   | Lists the Python packages needed for the project        |
+| `.env.example`       | Shows the environment variables needed by the project   |
+| `.gitignore`         | Tells Git which files and folders should not be tracked |
+| `README.md`          | Contains the project documentation                      |
+| `pictures/`          | Stores project screenshots                              |
+| `pictures/1.png`     | Screenshot of the game start                            |
+| `pictures/2.png`     | Screenshot of the quiz section                          |
+| `pictures/3.png`     | Screenshot of the final result                          |
+| `gifs/`              | Stores demo GIF files                                   |
+| `gifs/quiz_demo.gif` | Shows the project demo                                  |
 
+## Requirements
 
-## Requirments
-Before running the project make sure you have :
-- python 3
-- `python-dotenv`
+Before running the project, make sure you have:
+
+* Python 3
+* `python-dotenv`
 
 ## Installation
-1. open a terminal in the project folder
-2. check that python is installed
+
+1. Open a terminal in the project folder.
+
+2. Check that Python is installed:
+
 ```bash
 python --version
 ```
-3. install the python packages :
-```bash 
-pip install -r requirments.txt
+
+3. Install the required packages:
+
+```bash
+pip install -r requirements.txt
 ```
 
-## Envoriment Setup
-1. create a `.env` file from `.env.example`
+## Environment Setup
+
+1. Create a `.env` file from `.env.example`:
+
 ```bash
 cp .env.example .env
 ```
-2. open the new `.env` file
-3. replace the example value with your own password 
-```text
-QUIZ_ADMN_PASSWORD = your_password_here
-```
-4. save the file
 
-> Do not commit your `.env` file because it may contain private 
+2. Open the new `.env` file.
+
+3. Replace the example value with your own password:
+
+```text
+QUIZ_ADMIN_PASSWORD=your_password_here
+```
+
+4. Save the file.
+
+> Do not commit your `.env` file because it may contain private information.
+
 ## Usage
-1. open a terminal in the project folder
-2. run the quiz game 
+
+1. Open a terminal in the project folder.
+
+2. Run the quiz game:
+
 ```bash
 python main.py
 ```
-3. choose `yes` or `no` for admin mode 
-4. if you choose `yes`, enter the password from your `.env` file 
-5. enter your name
-6. answer the questions 
-7. see your final score and meesage
-8. your results is saved in `result.txt`
+
+3. Choose `yes` or `no` for admin mode.
+
+4. If you choose `yes`, enter the password from your `.env` file.
+
+5. Enter your name.
+
+6. Answer the questions.
+
+7. See your final score and message.
+
+8. Your results are saved to `result.txt`.
 
 ## Example Output
+
 ```text
-do you want to open admin mode? yes/no: no
-whats your name: Alex
-welcome
-what language are we using: c++
-wrong
-what command starts a git: git init
-correct
-what command shows git status: git --oneline
-wrong
-your score is:  1 out of  3
-keep praticing Alex   
+Do you want to open admin mode? yes/no: no
+
+What's your name: Alex
+
+Welcome!
+
+What language are we using: c++
+
+Wrong.
+
+What command starts Git: git init
+
+Correct!
+
+What command shows Git status: git --oneline
+
+Wrong.
+
+Your score is: 1 out of 3
+
+Keep practicing, Alex!
 ```
 
-## Screen Shot
+## Screenshots
 
-### start game
-![start game](pictures\1.png)
+### Start Game
 
-### quiz
-![quiz](pictures\2.png)
-### finalscore
-![final score](pictures\3.png)
+![Start game](pictures/1.png)
+
+### Quiz
+
+![Quiz](pictures/2.png)
+
+### Final Score
+
+![Final score](pictures/3.png)
 
 ## Demo
-![quiz_demo](gifs\quiz_demo.gif)
 
-## Road Map
-- [x] add multiple quiz questions
-- [x] calculate the final score
-- [x] save results to a file
-- [x] add admin mode
-- [ ] add more quiz questions
-- [ ] add difficultly levels
-- [ ] add a timer
+![Quiz demo](gifs/quiz_demo.gif)
+
+## Roadmap
+
+- [x] Add multiple quiz questions
+- [x] Calculate the final score
+- [x] Save results to a file
+- [x] Add admin mode
+- [ ] Add more quiz questions
+- [ ] Add difficulty levels
+- [ ] Add a timer
+
 ## Contributing
 
-## Licence
+Contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License.
 
 ## Author
 
-create by [Hamidreza]((https://github.com/hamidrezaesfandiary))  
+Created by [Hamidreza](https://github.com/hamidrezaesfandiary)
